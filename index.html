@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Clothing | Sustainable African Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">EFC 🌿</div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <nav id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Featured</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <h1>Eco-Friendly Clothing</h1>
+        <p>Explore sustainable fashion made for Africa. Quality, comfort, and eco-conscious design.</p>
+        <button class="btn">Shop Now</button>
+    </section>
+
+    <!-- Categories Section with Clickable Filters -->
+    <section id="categories" class="section">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <button class="category-item" onclick="showProducts('all')">All</button>
+            <button class="category-item" onclick="showProducts('men')">Men's</button>
+            <button class="category-item" onclick="showProducts('women')">Women's</button>
+            <button class="category-item" onclick="showProducts('kids')">Kids</button>
+            <button class="category-item" onclick="showProducts('accessories')">Accessories</button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="section">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Men's Products -->
+            <div class="product-item" data-category="men">
+                <img src="images/mens-product1.png" alt="Men's Shirt">
+                <h3>Eco Men's Shirt</h3>
+                <p>$30</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <!-- Women's Products -->
+            <div class="product-item" data-category="women">
+                <img src="images/womens-product1.png" alt="Women's Dress">
+                <h3>Eco Women's Dress</h3>
+                <p>$45</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <!-- Kids Products -->
+            <div class="product-item" data-category="kids">
+                <img src="images/kids-product1.png" alt="Kids' T-Shirt">
+                <h3>Eco Kids' T-Shirt</h3>
+                <p>$20</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <!-- Accessories -->
+            <div class="product-item" data-category="accessories">
+                <img src="images/accessory-product1.png" alt="Eco Tote Bag">
+                <h3>Eco Tote Bag</h3>
+                <p>$15</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Eco-Friendly Clothing. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* Reset & Global Styles */
+/* (The same as before) */
+
+/* Header - Hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #8b7d6b;
+        width: 100%;
+        left: 0;
+    }
+
+    #nav-menu a {
+        padding: 1em;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+}
+
+/* Product Filtering */
+.product-item {
+    display: none; /* Hide all by default */
+}
+
+.product-item.active {
+    display: block; /* Show filtered products */
+}
+
+
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #3d2b1f; /* Dark brown */
+    background-color: #f7f3ef; /* Cream */
+}
+
+/* Header */
+header {
+    background-color: #8b7d6b; /* Soft brown */
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+#hero {
+    padding: 5em 2em;
+    background-color: #d4b484; /* Earthy tone */
+    color: white;
+    text-align: center;
+}
+
+#hero h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Button */
+button.btn {
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #3d2b1f;
+}
+
+/* Sections */
+.section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+/* Category Section */
+.category-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 45%;
+    padding: 2em;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Product Section */
+.product-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 30%;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.social-links a {
+    color: #556b2f;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #8b7d6b;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .category-item, .product-item {
+        width: 100%;
+    }
+}
+
+
+/* Header - Hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #8b7d6b;
+        width: 100%;
+        left: 0;
+    }
+
+    #nav-menu a {
+        padding: 1em;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+}
+
+/* Product Filtering */
+.product-item {
+    display: block; /* Show all by default */
+}
+
+.product-item.hidden {
+    display: none; /* Hide filtered products */
+}
+
+/* Sidebar for Categories */
+#sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 200px;
+    padding: 1em;
+    background-color: #8b7d6b;
+    color: white;
+}
+
+#sidebar h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+#sidebar ul li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Product Grid */
+.product-grid {
+    margin-left: 220px; /* Offset to make space for the sidebar */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
