@@ -22,4 +22,4 @@ This is a responsive front-end website for an **eco-friendly clothing store** ai
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yirutabyose/eco-friendly-clothing.git
+   git clone https://github.com/iyoramu/eco-friendly-clothing.git
